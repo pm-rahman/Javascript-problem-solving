@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>javascript problem</title>
 </head>
+
 <body>
-    
+    <div id="calculator" class="w-1/3 mx-auto mt-10 border rounded p-6">
+        <div class="flex gap-4">
+            <input type="number" id="firstNum" class="border p-2 rounded w-1/2">
+            <input type="number" id="secondNum" class="border p-2 rounded w-1/2">
+        </div>
+        <div class="flex gap-2 justify-center mt-3">
+            <button onclick="calculator(this)" name="sum" class="border runded py-2 px-4">+</button>
+            <button onclick="calculator(this)" name="sub" class="border runded py-2 px-4">-</button>
+            <button onclick="calculator(this)" name="multi" class="border runded py-2 px-4">*</button>
+            <button onclick="calculator(this)" name="div" class="border runded py-2 px-4">/</button>
+        </div>
+        <P class="text-center mt-3" id="result"></P>
+    </div>
 
     <script src="./index.js"></script>
 </body>
+
 </html>
